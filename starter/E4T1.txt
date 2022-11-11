@@ -1,5 +1,7 @@
-
-
 # Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
-
+    1- limit the direct ingress traffic to web service instance by putting in private subnet
+    2- reconfigure the Security Groups of Web Service Instance to allow only HTTP requests from Application load-balancer
+    3- Establish bastion host which will minimize the chances of penetration
 # Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+    1- enable Role based Access and PAM to access certain bucket, for example, free recipes bucket can only accessible for certain role and certain actions/policy
+    2- Allow privilege and certain role to access Secret recipes bucket with certain policy such as read

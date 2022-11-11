@@ -1,5 +1,6 @@
 Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
 
-# Poor practice 1
-
+# Poor practice 1:
+The web service instance is in Public subnet. It should be in a private subnet, no one else can access to that instance is better.
 # Poor practice 2
+The WebAppSG security group permits ingress traffic from the internet to multiple ports (including 22, 5000 and 80) exposing the server to attacks.

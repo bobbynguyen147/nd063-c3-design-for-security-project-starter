@@ -1,3 +1,5 @@
-# Describe GuardDuty findings that were detected related to the brute force attack
+# Describe GuardDuty findings that were detected related to the brute force attack:
+    GuardDuty shows that the web service instance is under Brute force attack which is initiating from Attack Instance - C3, which used to gain unauthorized access to your instance by guessing the SSH passwordh is
 
 # Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+    The primary data sources which AWS GuardDuty rely on to detecte malicious and unusuall activities are VPC flow log, DNS Logs, and AWS CloudTrail events
